@@ -8,11 +8,15 @@ for year in years:
 		days = range(1,32)
 		if month == 2:
 			days = range(1,29)
+			if year % 4 == 0:
+				days = range(1,30)
+			if year % 100 == 0:
+				days = range(1,29)
+			if year % 400 == 0:
+				days = range(1,30)
+					
 		if month == 4 or month == 6 or month == 9 or month == 11:
 			days = range(1,31)
-				if year % 4 = 0:
-					if month == 2:
-						days = range(1,28)
 			
 		for day in days:
 			total = total + 1
