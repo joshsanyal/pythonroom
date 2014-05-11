@@ -1,16 +1,14 @@
 # author: joshsanyal
-import turtle
-
-t = turtle.Turtle()
-
-n = int (input("How many legs should this sprite have?"))
-print n
-
-t.shape("circle")
-angle = 360 / n
-	
-for j in range(0,n):
-	t.right(angle)
-	t.forward(100)
-	t.stamp()
-	t.backward(100)
+numbers = range(2,1001)
+total = 0
+for n in numbers:
+	tests = range(2,n-1)
+	prime = True
+	for t in tests:
+		if n % t == 0:
+			prime = False
+	if prime:
+		total = total + n
+		
+print total
+		
