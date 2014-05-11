@@ -16,3 +16,11 @@ for i in range(22):
 for j in range(22):
 	t2.right(j)
 	t2.forward(12)
+
+t3 = turtle.Turtle()
+t3.color("blue")
+t3.hideturtle()
+t3.setpos(-60, -60)
+t3.write("Happy Mother's Day, mom!!!")
+t3.setpos(-60, -80)
+t3.write("Your son, Josh")
