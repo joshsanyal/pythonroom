@@ -2,5 +2,7 @@
 
 import turtle
 
-t.turtle.Turtle()
-t.forward(100)
+t = turtle.Turtle()
+for x in range(34):
+	t.forward(200)
+	t.right(185)
