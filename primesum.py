@@ -17,4 +17,5 @@ for n in numbers:
 	if prime:
 		total = total + ( n - lastPrime)
 		lastPrime = n	
-print total
+			
+print str "total is " + total
