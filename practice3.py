@@ -1,38 +1,13 @@
 # author: joshsanyal
 
-def sayHello():
-	print "Hello there!"
-	
-def sayHelloTo(name):
-	print "Hello " + name + "."
-	
-def sayGreeting(greeting, name):
-	print greeting + "there, " + name
-	
-def sayGoodbye():
-	print "See ya later!"
-	
-def sayGoodbyeTo(name):
-	print "see ya " + name + "."
-	
-def ageOf(person):
-	if person == "akhilesh":
-		return 9
-	if person == "ravi":
-		return 9
-	if person == "josh":
-		return 10
-	if person == "keshav":
-		return 28
-	if person == "yash":
-		return 31
-	
+def isPrime(n):
+	tests = range(2, n / 2 + 1)
+	for test in tests:
+		if n % test == 0:
+			return False
+		
+	return True
 
-
-sayHello()
-sayHelloTo("Keshav")
-sayGreeting("Hello ", "Akhilesh")
-sayGreeting("Hello ", "Josh")
-sayGreeting("Goodye ", "Ravi")
-print ageOf("josh") + ageOf("akhilesh") + ageOf("ravi") + ageOf("keshav") + ageOf("yash")
-sayGoodbye()
+for n in range(2,1000):
+	if isPrime(n) and isPrime(n + 2):
+		print str(n) + " and " + str(n + 2)
