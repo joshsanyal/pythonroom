@@ -1,7 +1,10 @@
 # author: joshsanyal
 
 def isGreaterThan100(n):
-	return false
+	if 100 > n:
+		return True
+	else:
+		return False
 
 def whichIsGreater(a, b):
 	if a > b:
@@ -10,33 +13,60 @@ def whichIsGreater(a, b):
 		return b
 	
 def whichIsGreater(a, b, c):
-	return a
-
+	if a > b + a > c:
+		return a
+	if b > a + b > c:
+		return b
+	if c > b + c > b:
+		return c
+	
 def whichIsSmaller(a, b, c):
-	return a
+	if a < b + a < c:
+		return a
+	if b < a + b < c:
+		return b
+	if c < b + c < b:
+		return c
 
 # Return whether a is divisible by b
-def divisibleBy(a, b):
-	return False
 
-# Simple functions, shouldm't take you more than 15 seconds
+def divisibleBy(a, b):
+	if a / b == % range(b - 1) == 0:
+		return True
+	else:
+		return False
+
+# Simple functions, shouldn't take you more than 15 seconds
+
 def add(a, b):
-	return a
+	total = 0
+	total = total + a + b
+
 def subtract(a, b):
-	return a
+	total = 0
+	total = total + a - b
+
 def multiply(a, b):
-	return a
+	total = 0
+	total = total + a * b
+
 def divide(a, b):
-	return a
+	total = 0
+	total = total + a / b
 
 #interesting function: a to the power of b
-def power(a, b)):
-	return a
+
+def power(a, b):
+	total = 0
+	total = total + a
+
 def absoluteValue(a):
 	return a
 
-# challenge funstions
+# challenge functions
+
 # hint - use the modulus and division
+
 def palindromeNumber(n):
 	return alse
 
