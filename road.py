@@ -1,7 +1,7 @@
 import turtle
 t = turtle.Turtle()
-for i in range(50):
-	t.forward(i*10)
-	t.left(144)
-	
-t.speed(10000000)
+
+t.setpos(-210,50)
+t.forward(420)
+t.setpos(-,50)
+t.stamp
