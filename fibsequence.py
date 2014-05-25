@@ -1,0 +1,26 @@
+import turtle
+t = turtle.Turtle()
+
+t.setpos(-120,110)
+t.forward(240)
+t.right(90)
+t.forward(50)
+t.right(90)
+t.forward(90)
+t.left(90)
+t.forward(100)
+for n in range(36):
+	t.forward(5)
+	t.right(5)
+t.right(90)
+t.forward(40)
+t.right(90)
+for n in range(62):
+	t.left(3)
+	t.forward(1)
+t.right(6)
+t.forward(103)
+t.left(90)
+t.forward(116)
+t.right(90)
+t.forward(50)
