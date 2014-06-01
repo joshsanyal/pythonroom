@@ -1,14 +1,12 @@
-# author: joshsanyal
-import random
-total = 1
+### Check if an inputted word is a palindrome
 
-people = int(input("How many people are there?"))
-flies= int(input("How many flies are in the room?"))
-
-if random.randint(1,1000) < flies:
-	print "Someone is blinking."
-else:
-	print "Nobody is blinking."
-if random.randint(1,1000) < flies:
-	total = total + 1
-print total
+word = input("Speak, human.")
+StartOfWord = 0
+endOfWord = len(word) -1
+for i in range(length):
+	# Check if the word reads the same going forward and backward
+	
+	if word[0] == word[length]:
+		# do some code
+	else:
+		print "Not a palindrome"
