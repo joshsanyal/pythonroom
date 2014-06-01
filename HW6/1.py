@@ -6,7 +6,6 @@ endOfWord = len(word) -1
 for i in range(length):
 	# Check if the word reads the same going forward and backward
 	
-	if word[0] == word[length]:
-		# do some code
+	if word[0] == word[length]":
 	else:
 		print "Not a palindrome"
