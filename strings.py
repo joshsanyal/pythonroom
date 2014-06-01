@@ -1,9 +1,17 @@
-word = input("Speak, human")
+word = input("Insert word for translation to pig latin")
 word = word.lower()
+vowels = ["a", "e", "i", "o", "u"]
 output = ""
 
-if word[0] == "a" or word[0] == "e" or word[0] == "i" or word[0] == "o" or word[0] == "u":
+if word[0] in vowels:
 	output += word + "yay"
 else:
-	output += word[1:] + word[0] + "ay"	
+	start = 0
+	for letter in list(word):
+		if letter in vowels:
+			break
+		else:
+			start += 1
+	output += word[start:] + word[:start] + "ay"
+
 print output
