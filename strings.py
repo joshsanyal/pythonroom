@@ -1,4 +1,4 @@
-words = input("Insert word for translation to pig latin")
+words = input("Insert word/phrase for translation to pig latin")
 words = words.lower()
 words = words.split(" ")
 vowels = ["a", "e", "i", "o", "u"]
@@ -17,5 +17,4 @@ for word in words:
 				else:
 					start += 1
 		output += word[start:] + word[:start] + "ay "
-
 print output
